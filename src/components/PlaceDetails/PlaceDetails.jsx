@@ -9,7 +9,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 // import style
 import Map from '../../components/Map/Map';
-import Residents from '../../components/Residents/Residents';
+import ResidentCard from '../ResidentCard/ResidentCard';
 
 const PlacePage = () => {
     const {city} = useParams();
@@ -34,7 +34,7 @@ const PlacePage = () => {
       <Map />
     </div>
     <Carousel />
-    <Residents />
+    <ResidentCard />
     </section>
   )
 }
