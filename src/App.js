@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import PlacePage from './pages/PlacePage/PlacePage';
 import Resident from './pages/Resident/Resident';
+import Booking from './components/Booking/Booking';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/place/:city" element={<PlacePage />} />
             <Route path="/place/:city/hotel/:hotel" element={<Resident />} />
+            <Route path="/place/:city/hotel/:hotel/booking" element={<Booking />} />
         </Routes>
       </Router>
     </div>

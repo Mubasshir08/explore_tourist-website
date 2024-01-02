@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Map from '../Map/Map';
 import Review from '../Review/Review';
+import { Link } from 'react-router-dom';
 
 const ResidentDetails = () => {
   const {hotel} = useParams();
@@ -29,7 +30,9 @@ const ResidentDetails = () => {
                   <h3 className='font-semibold py-[0.10rem]'>Status : 5 STAR</h3>
                     <Review />
                   <p><span className='font-semibold py-[0.10rem]'>Description :</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et culpa, id omnis optio neque iusto saepe aperiam cupiditate</p>
-                  <button className='bg-[#0ea4e9f1] text-white rounded py-2 px-3 my-2 hover:bg-[#0ea4e9]'>Book Now</button>
+                  <Link to= '/place/city/hotel/hotel/booking'>
+                    <button className='bg-[#0ea4e9f1] text-white rounded py-2 px-3 my-2 hover:bg-[#0ea4e9]'>Book Now</button>
+                  </Link>
                 </div>
               <Map />
           </div>
