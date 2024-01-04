@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import PlacePage from './pages/PlacePage/PlacePage';
 import Resident from './pages/Resident/Resident';
-import Booking from './components/Booking/Booking';
+import Booking from './pages/Booking/Booking';
 
 function App() {
   return (

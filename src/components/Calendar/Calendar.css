@@ -1,0 +1,21 @@
+.p-separator{
+    padding: 0 2%;
+}
+
+.p-timepicker{
+    margin-top: 10px;
+}
+
+.p-inputtext{
+    outline: none;
+}
+
+.p-datepicker{
+    background-color: white;
+    margin-top: 1%;
+}
+
+.p-datepicker-buttonbar{
+    justify-content: space-evenly;
+    gap: 20%;
+}
