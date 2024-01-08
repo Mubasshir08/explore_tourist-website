@@ -6,7 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({img}) => {
   return (
-    <div class="max-w-sm pb-10 mb-4 border border-slate-300 rounded-2xl overflow-hidden shadow-lg shadow-slate-500">
+    <div className="max-w-sm pb-10 mb-4 border border-slate-300 rounded-2xl overflow-hidden shadow-lg shadow-slate-500">
         <div className="w-[90%] mx-auto p-3">
             <img className="rounded-2xl" src={img} alt="Sunset in the mountains" />
         </div>

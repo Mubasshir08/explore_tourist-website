@@ -8,7 +8,7 @@ import {
 
 import { Link } from "react-router-dom";
  
-export default function Nav() {
+export default function Nav({homeNavBgColor, position}) {
   const [openNav, setOpenNav] = React.useState(false);
  
   React.useEffect(() => {
@@ -64,8 +64,8 @@ export default function Nav() {
     </ul>
   );
   return (
-    <div className="max-h-[768px] w-full overflow-scroll md:overflow-hidden">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none border-none pt-10 px-10 lg:px-12 lg:py-2 bg-sky-500">
+    <div className="max-h-[768px] w-full  md:overflow-hidden">
+      <Navbar className={`${position} top-0 z-10 h-max max-w-full rounded-none border-none pt-3 px-10 lg:px-14 lg:py-2 ${homeNavBgColor}`}>
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -100,7 +100,7 @@ export default function Nav() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 -mt-3"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}

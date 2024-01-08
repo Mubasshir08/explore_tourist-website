@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 const HomePageLayout = ({children}) => {
     return (
        <>
-        <Nav />
+        <Nav homeNavBgColor = 'bg-transparent' position = 'absolute'/>
             {children}
         <Footer />
        </>
