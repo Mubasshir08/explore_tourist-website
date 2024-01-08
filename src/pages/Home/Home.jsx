@@ -3,13 +3,13 @@ import TrandingPlace from '../TrandingPlace/TrandingPlace';
 import MorePlace from '../MorePlace/MorePlace';
 import ExploredPlace from '../ExploredPlace/ExploredPlace';
 import HomePageLayout from '../../layout/HomePageLayout';
-import Video from '../../components/Video/Video';
+import HeroSection from '../../components/HeroSection/HeroSection';
 
 const Home = () => {
   return (
     <div>
         <HomePageLayout>
-          <Video/>
+          <HeroSection/>
           <TrandingPlace></TrandingPlace>
           <MorePlace></MorePlace>
           <ExploredPlace></ExploredPlace> 
