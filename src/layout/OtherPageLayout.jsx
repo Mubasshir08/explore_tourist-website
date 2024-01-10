@@ -7,7 +7,7 @@ const OthersPageLayout = ({children}) => {
 
     return (
         <>
-           <Nav /> 
+           <Nav homeNavBgColor = 'bg-sky-500' position = 'sticky'/> 
             {children}
            <Footer />
         </>
